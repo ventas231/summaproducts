@@ -101,3 +101,12 @@ document.querySelectorAll('.rev').forEach(el=>io.observe(el));
     window.location.href=href;
   });
 })();
+
+/* Marcas: brillo al hacer clic */
+document.querySelectorAll('.brand').forEach(function(b){
+  b.setAttribute('tabindex','0');
+  var fire=function(){b.classList.remove('pop');void b.offsetWidth;b.classList.add('pop');};
+  b.addEventListener('click',fire);
+  b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();fire();}});
+  b.addEventListener('animationend',function(){b.classList.remove('pop');});
+});

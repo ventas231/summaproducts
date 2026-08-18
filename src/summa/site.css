@@ -277,3 +277,54 @@ footer a:hover{color:#000;text-decoration:underline}
 .ticker-track{display:flex;align-items:center;gap:70px;padding-right:70px;white-space:nowrap}
 .ticker-item{font-family:Fraunces,Georgia,serif;font-size:clamp(1.5rem,3.2vw,2.4rem);font-weight:600;color:#000;letter-spacing:-.02em}
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ---- Tipografía: títulos centrados, texto justificado a todo lo ancho ---- */
+section h2,section .eyebrow{text-align:center}
+section h2{max-width:none}
+.lead{max-width:none;width:100%;text-align:justify;text-align-last:center;hyphens:auto}
+.card p,.pillar p,.step p,details p,.fit li span,.mnote{text-align:justify;hyphens:auto}
+details p{max-width:none}
+.mnote{text-align:center}
+
+/* ---- Palabras destacadas ---- */
+.hl{font-weight:700;color:#000;background:linear-gradient(transparent 62%,rgba(0,0,0,.13) 0);padding:0 1px;border-radius:2px}
+
+/* ---- Animación de entrada con escalonado ---- */
+.rev{transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+.rev{transform:translateY(22px)}
+.grid3 .rev:nth-child(2),.pillars .rev:nth-child(2),.steps .rev:nth-child(2),.brands .rev:nth-child(2),.mgrid .rev:nth-child(2){transition-delay:.08s}
+.grid3 .rev:nth-child(3),.pillars .rev:nth-child(3),.steps .rev:nth-child(3),.brands .rev:nth-child(3),.mgrid .rev:nth-child(3){transition-delay:.16s}
+.grid3 .rev:nth-child(4),.steps .rev:nth-child(4),.brands .rev:nth-child(4),.mgrid .rev:nth-child(4){transition-delay:.24s}
+.grid3 .rev:nth-child(5),.mgrid .rev:nth-child(5){transition-delay:.32s}
+.grid3 .rev:nth-child(6),.mgrid .rev:nth-child(6){transition-delay:.4s}
+
+/* ---- Micro-interacciones ---- */
+.card,.pillar,.step,.ccard{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.card:hover,.ccard:hover{transform:translateY(-6px);box-shadow:0 16px 34px -20px rgba(0,0,0,.45)}
+.pillar:hover,.step:hover{transform:translateY(-4px)}
+.mnum{transition:transform .3s ease}
+.mgrid > div:hover .mnum{transform:scale(1.06)}
+.btn{transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.btn:hover{transform:translateY(-2px)}
+details summary{transition:color .2s ease,padding-left .25s ease}
+details:hover summary{padding-left:4px}
+
+/* ---- Marcas: mismo tamaño, clickeables con brillo ---- */
+.brands{gap:28px}
+.brand{position:relative;overflow:hidden;cursor:pointer;border-radius:10px;transition:transform .35s cubic-bezier(.2,.7,.3,1),box-shadow .35s ease}
+.brand:hover{transform:translateY(-6px) scale(1.03)}
+.brand:after{content:"";position:absolute;top:0;left:-60%;width:45%;height:100%;background:linear-gradient(105deg,transparent,rgba(0,0,0,.10),transparent);transform:skewX(-18deg);opacity:0;pointer-events:none}
+.brand.pop:after{animation:shine .85s ease-out}
+.brand.pop{animation:popper .55s cubic-bezier(.2,.9,.3,1)}
+@keyframes shine{0%{left:-60%;opacity:1}100%{left:120%;opacity:0}}
+@keyframes popper{0%{transform:scale(1)}45%{transform:scale(1.09)}100%{transform:scale(1)}}
+.brand.pop img{filter:drop-shadow(0 0 14px rgba(0,0,0,.28))}
+.blogo{height:150px}
+.blogo.has-img img{max-height:100px;transition:transform .35s ease}
+.brand:hover .blogo.has-img img{transform:scale(1.05)}
+.blogo.has-img img[alt="Nivoo"]{max-height:82px}
+.blogo.has-img img[alt="IdealFit"]{max-height:118px}
+.blogo.has-img img[alt="SpecialFit Socks"]{max-height:104px}
+.blogo.has-img img[alt="InstaNutra"]{max-height:96px}
+
+@media(prefers-reduced-motion:reduce){.rev,.brand,.card{transition:none!important;animation:none!important}}
