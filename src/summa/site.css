@@ -32,10 +32,9 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;transition:.25s;padding:14
 header.solid{background:var(--paper);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
 .hrow{display:flex;align-items:center;justify-content:space-between;gap:24px}
 .logoslot{display:flex;align-items:center;gap:10px}
-.logo{font-family:Fraunces,serif;font-size:1.05rem;letter-spacing:.18em;color:#fff;font-weight:600;white-space:nowrap}
-header.solid .logo{color:var(--ink)}
-.logotag{font-size:9px;letter-spacing:.1em;border:1px dashed var(--silver);color:var(--silver);padding:2px 5px;border-radius:3px;text-transform:uppercase}
-header.solid .logotag{border-color:var(--line);color:var(--muted)}
+.logo{display:flex;align-items:center;height:34px}
+.logo img{height:100%;width:auto;display:block;filter:brightness(0) invert(1)}
+header.solid .logo img{filter:none}
 nav{display:none;gap:26px;font-size:.9rem;color:rgba(255,255,255,.8)}
 header.solid nav{color:var(--muted)}
 nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:5px}
