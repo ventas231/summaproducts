@@ -160,3 +160,6 @@ footer a:hover{color:#fff}
 .legal{margin-top:44px;padding-top:22px;border-top:1px solid var(--ink-line);font-size:.8rem;color:var(--faint);display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:space-between}
 .rev{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
 .rev.in{opacity:1;transform:none}
+
+.blogo.has-img{border:none;padding:0}
+.blogo.has-img img{max-height:64px;max-width:100%;object-fit:contain}
