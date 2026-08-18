@@ -237,8 +237,8 @@ footer,footer h4,footer a,footer .logo{color:#000}
 /* FAQ */
 .faqs{border-top:1px solid var(--line)}
 details{border-bottom:1px solid var(--line)}
-summary{color:#000}
-summary:after{color:#555}
+summary{color:#000 !important}
+summary:after{color:#555 !important}
 
 /* Contacto */
 .ccard,.form{background:#fff;border:1px solid var(--line)}
