@@ -1,24 +1,53 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
+import css from "@/summa/site.css?raw";
+import bodyHtml from "@/summa/site.body.html?raw";
+import js from "@/summa/site.js?raw";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Summa Products — Para fabricantes y dueños de marca" },
+      {
+        name: "description",
+        content:
+          "Summa Products: soluciones para fabricantes y dueños de marca, con acompañamiento de principio a fin.",
+      },
+      { property: "og:title", content: "Summa Products" },
+      {
+        property: "og:description",
+        content:
+          "Soluciones para fabricantes y dueños de marca, con acompañamiento de principio a fin.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  useEffect(() => {
+    const s = document.createElement("script");
+    s.textContent = js;
+    document.body.appendChild(s);
+    return () => {
+      s.remove();
+    };
+  }, []);
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <style dangerouslySetInnerHTML={{ __html: css }} />
+      <div dangerouslySetInnerHTML={{ __html: bodyHtml }} />
+    </>
   );
 }
