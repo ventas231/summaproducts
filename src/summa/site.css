@@ -328,3 +328,8 @@ details:hover summary{padding-left:4px}
 .blogo.has-img img[alt="InstaNutra"]{max-height:96px}
 
 @media(prefers-reduced-motion:reduce){.rev,.brand,.card{transition:none!important;animation:none!important}}
+/* Ajuste fino de tamaño visual de logos */
+.blogo.has-img img[alt="Nivoo"]{max-height:74px;max-width:230px}
+.blogo.has-img img[alt="IdealFit"]{max-height:130px;max-width:230px}
+.blogo.has-img img[alt="InstaNutra"]{max-height:88px;max-width:230px}
+.blogo.has-img img[alt="SpecialFit Socks"]{max-height:112px;max-width:230px}
