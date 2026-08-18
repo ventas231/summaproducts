@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   useEffect(() => {
     const s = document.createElement("script");
-    s.textContent = js;
+    s.textContent = `(function(){${js}})();`;
     document.body.appendChild(s);
     return () => {
       s.remove();
