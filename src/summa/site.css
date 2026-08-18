@@ -32,10 +32,10 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;transition:.25s;padding:14
 header.solid{background:var(--paper);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
 .hrow{display:flex;align-items:center;justify-content:space-between;gap:24px}
 .logoslot{display:flex;align-items:center;gap:10px}
-.logo{display:flex;align-items:center;height:34px}
+.logo{display:flex;align-items:center;height:56px}
 .logo img{height:100%;width:auto;display:block;filter:brightness(0) invert(1)}
 header.solid .logo img{filter:none}
-nav{display:none;gap:26px;font-size:.9rem;color:rgba(255,255,255,.8)}
+nav{display:none;gap:40px;font-size:.9rem;color:rgba(255,255,255,.8)}
 header.solid nav{color:var(--muted)}
 nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:5px}
 header:not(.solid) nav a:hover{color:#fff}
@@ -176,3 +176,16 @@ footer a:hover{color:#fff}
 .cdots{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:7px}
 .cdots button{width:7px;height:7px;border-radius:50%;border:0;padding:0;cursor:pointer;background:rgba(255,255,255,.45)}
 .cdots button.on{background:#fff}
+
+/* fondo gris en secciones oscuras */
+.hero{background:#5C6169}
+.dark{background:#5C6169}
+.metrics{background:#51565D}
+header.solid{background:var(--paper)}
+/* logo header más grande */
+.logo img{max-width:none}
+/* fotos del carrusel a color */
+.shot img,.carousel .cslide{filter:none}
+/* logo Nivoo/marcas más grande */
+.blogo{height:130px}
+.blogo.has-img img{max-height:130px}
