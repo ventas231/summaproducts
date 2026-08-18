@@ -179,7 +179,7 @@ footer a:hover{color:#fff}
 
 /* Toda la página: fondo blanco y letras negras */
 body{background:#fff;color:#000}
-.hero,.metrics,.dark,footer{background:#fff;color:#000}
+.hero,.metrics,.dark,footer,.warm{background:#fff;color:#000}
 .hero:after{display:none}
 
 /* Header siempre legible sobre fondo blanco */
@@ -234,8 +234,14 @@ footer,footer h4,footer a,footer .logo{color:#000}
 .fit .no li{color:#555}
 .fit .no li b{color:#999}
 
+/* FAQ */
+.faqs{border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{color:#000}
+summary:after{color:#555}
+
 /* Contacto */
-.ccard,.form{background:#f7f7f7;border-color:var(--line)}
+.ccard,.form{background:#fff;border:1px solid var(--line)}
 .ccard .k,.ccard .m{color:#555}
 .ccard .v{color:#000}
 .field label{color:#555}
