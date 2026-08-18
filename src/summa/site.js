@@ -76,3 +76,28 @@ document.querySelectorAll('.rev').forEach(el=>io.observe(el));
   root.querySelector('.next').addEventListener('click',function(){go(i+1);reset();});
   reset();
 })();
+
+/* Envío del formulario al correo de Summa */
+(function(){
+  var f=document.getElementById('leadForm');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var to=f.getAttribute('data-mailto')||'admin@summaproducts.com';
+    var g=function(id){var el=document.getElementById(id);return el?String(el.value||'').trim():'';};
+    var lines=[
+      'Nombre: '+g('name'),
+      'Empresa: '+g('company'),
+      'Correo: '+g('email'),
+      'Teléfono / WhatsApp: '+g('phone'),
+      'Categoría: '+g('category'),
+      'Volumen mensual: '+g('volume'),
+      '¿Ya se vende en línea?: '+g('online'),
+      '',
+      'Mensaje:',
+      g('message')
+    ].join('\n');
+    var href='mailto:'+to+'?subject='+encodeURIComponent('Nuevo contacto desde summaproducts.com')+'&body='+encodeURIComponent(lines);
+    window.location.href=href;
+  });
+})();
