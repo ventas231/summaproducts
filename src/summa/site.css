@@ -177,15 +177,88 @@ footer a:hover{color:#fff}
 .cdots button{width:7px;height:7px;border-radius:50%;border:0;padding:0;cursor:pointer;background:rgba(255,255,255,.45)}
 .cdots button.on{background:#fff}
 
-/* fondo gris en secciones oscuras */
-.hero{background:#5C6169}
-.dark{background:#5C6169}
-.metrics{background:#51565D}
-header.solid{background:var(--paper)}
-/* logo header más grande */
-.logo img{max-width:none}
+/* Toda la página: fondo blanco y letras negras */
+body{background:#fff;color:#000}
+.hero,.metrics,.dark,footer,.warm{background:#fff;color:#000}
+.hero:after{display:none}
+
+/* Header siempre legible sobre fondo blanco */
+header{background:#fff}
+header nav{color:#000}
+header:not(.solid) nav a:hover{color:#000}
+header.solid{background:#fff;box-shadow:0 1px 0 var(--line)}
+.logo img{filter:none;max-width:none}
+
+/* Tipografía y acentos en negro */
+.hero h1,.hero .lead,.metrics .mnum,.metrics .mlab,.metrics .mnote,
+.dark h1,.dark h2,.dark .lead,.dark p,.dark h3,
+footer,footer h4,footer a,footer .logo{color:#000}
+.eyebrow,.lead,.mlab,.mnote,.dim,.faint,.muted,
+.pillar p,.card p,.brand p,.ch p,.step p,details p,.priv{color:#333}
+.hero .eyebrow,.dark .eyebrow,.metrics .eyebrow{color:#555}
+
+/* Métricas */
+.metrics{border-top:1px solid var(--line)}
+.mnum{color:#000}
+.msup{color:#555}
+.mlab{color:#333}
+.mnote{color:#555}
+.ph{background:rgba(0,0,0,.05);border-color:#888;color:#555}
+
+/* Botones */
+.btn-p{background:#000;color:#fff}
+.btn-p:hover{background:#333}
+.on-light .btn-p{background:#000;color:#fff}
+.on-light .btn-p:hover{background:#333}
+.btn-o{border-color:#000;color:#000}
+.btn-o:hover{border-color:#333;background:rgba(0,0,0,.04)}
+
+/* Selector de idioma */
+.lang{border-color:var(--line)}
+.lang button{color:#555}
+.lang button.on{background:#000;color:#fff}
+
+/* Canales hero */
+.chan{border-top:1px solid var(--line)}
+.chan span{color:#555}
+.chan li{color:#333;border-color:var(--line)}
+
+/* Tarjetas y celdas */
+.card,.brand,.ch{background:#fff}
+
+/* Proceso */
+.step{border-top:1px solid var(--line)}
+.snum{color:#999}
+
+/* Fit */
+.fit .no li{color:#555}
+.fit .no li b{color:#999}
+
+/* FAQ */
+.faqs{border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{color:#000 !important}
+summary:after{color:#555 !important}
+
+/* Contacto */
+.ccard,.form{background:#fff;border:1px solid var(--line)}
+.ccard .k,.ccard .m{color:#555}
+.ccard .v{color:#000}
+.field label{color:#555}
+.field input,.field select,.field textarea{background:#fff;border-color:var(--line);color:#000}
+.field input:focus,.field select:focus,.field textarea:focus{outline-color:#000}
+
+/* Footer */
+footer{border-top:1px solid var(--line)}
+footer a:hover{color:#000;text-decoration:underline}
+.legal{border-top:1px solid var(--line);color:#555}
+
+/* Carrusel */
+.shotnote{background:rgba(255,255,255,.9);color:#000}
+
 /* fotos del carrusel a color */
 .shot img,.carousel .cslide{filter:none}
+
 /* logo Nivoo/marcas más grande */
 .blogo{height:130px}
 .blogo.has-img img{max-height:130px}
