@@ -190,9 +190,10 @@ footer a:hover{color:#fff}
   --line:var(--pz-line);
 }
 body{background:var(--pz-black);color:var(--pz-text)}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:radial-gradient(900px 520px at 78% -6%,rgba(77,163,255,.16),transparent 62%),
-             radial-gradient(700px 460px at 8% 22%,rgba(27,79,214,.14),transparent 66%)}
+/* textura sutil global (sin azul en toda la página) */
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:linear-gradient(rgba(140,175,235,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(140,175,235,.05) 1px,transparent 1px);
+  background-size:64px 64px}
 header,section,footer{position:relative;z-index:1}
 .hero{display:none}
 section{background:transparent}
