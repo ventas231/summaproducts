@@ -350,3 +350,15 @@ footer a:hover{color:#fff}
 .blogo.has-img img[alt="InstaNutra"],
 .blogo.has-img img[alt="SpecialFit Socks"]{max-height:180px;max-width:340px;width:auto;object-fit:contain}
 .blogo.has-img img{filter:brightness(0) invert(1) drop-shadow(0 6px 18px rgba(0,0,0,.55));opacity:1}
+
+/* Compactación extra del hero para que el mapa entre en pantalla */
+.mkt{padding:74px 0 4px}
+.mkt h1{font-size:clamp(1.6rem,2.7vw,2.2rem);margin-top:8px}
+.mkt .lead{font-size:.95rem;max-width:64ch}
+.mkt .cta{margin-top:14px}
+.mkt-strip{margin-top:14px;padding:10px 0;gap:12px 38px}
+#map{padding:6px 0 48px}
+#map h2{font-size:clamp(1.2rem,2vw,1.6rem)}
+#map .lead{display:none}
+.mapwrap{margin-top:10px}
+.mapwrap svg{max-height:320px}
