@@ -308,3 +308,6 @@ footer a:hover{color:#fff}
 
 @media(prefers-reduced-motion:reduce){.rev,.brand,.card,.route,.hubpulse,.plane{transition:none!important;animation:none!important}}
 
+
+/* pilares en 4 columnas */
+@media(min-width:760px){.pillars{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}}
