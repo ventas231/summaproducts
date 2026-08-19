@@ -364,12 +364,12 @@ footer a:hover{color:#fff}
 .mapwrap svg{max-height:300px;margin-inline:auto}
 
 /* Logos de nuestras marcas: más grandes y visibles */
-.brand{height:200px}
-.blogo{height:200px}
+.brand{height:180px;padding:0 14px}
+.blogo{height:180px;width:100%}
 .blogo.has-img img,
 .blogo.has-img img[alt="IdealFit"],
 .blogo.has-img img[alt="InstaNutra"],
-.blogo.has-img img[alt="SpecialFit Socks"]{max-height:180px;max-width:340px;width:auto;object-fit:contain}
+.blogo.has-img img[alt="SpecialFit Socks"]{max-height:140px;max-width:100%;width:auto;object-fit:contain}
 .blogo.has-img img{filter:brightness(0) invert(1) drop-shadow(0 6px 18px rgba(0,0,0,.55));opacity:1}
 
 /* Compactación extra del hero para que el mapa entre en pantalla */
