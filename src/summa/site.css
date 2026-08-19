@@ -312,3 +312,41 @@ footer a:hover{color:#fff}
 
 /* pilares en 4 columnas */
 @media(min-width:760px){.pillars{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}}
+
+/* ====== Ajustes: mapa arriba, logos más grandes, azul por zonas ====== */
+/* El azul solo en algunas zonas, no en toda la página */
+.mkt,#map,.metrics,#contact{position:relative}
+.mkt:before,#map:before,#contact:before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1}
+.mkt:before{background:radial-gradient(820px 420px at 78% -10%,rgba(77,163,255,.20),transparent 64%)}
+#map:before{background:radial-gradient(760px 420px at 20% 10%,rgba(27,79,214,.20),transparent 66%)}
+#contact:before{background:radial-gradient(700px 380px at 85% 100%,rgba(77,163,255,.14),transparent 66%)}
+#who,#brands,#services,#channels,#process,#faq{background:transparent}
+
+/* Hero compacto para que el mapa se vea de entrada */
+.mkt{padding:88px 0 12px}
+.mkt h1{font-size:clamp(1.7rem,3.2vw,2.6rem);max-width:24ch}
+.mkt .lead{font-size:1rem;margin-top:10px}
+.mkt .cta{margin-top:18px}
+
+/* Logos de marketplaces mucho más grandes */
+.mkt-strip{gap:16px 44px;margin-top:20px;padding:14px 0}
+.mkt-strip img{height:58px;max-width:200px;object-fit:contain;opacity:.95}
+.mkt-strip img[alt="Mercado Libre"],.mkt-strip img[alt="Liverpool"]{height:66px}
+@media(max-width:700px){.mkt-strip img{height:44px}}
+
+/* Mapa más compacto y visible desde el primer vistazo */
+#map{padding:14px 0 56px}
+#map .eyebrow{margin-bottom:6px}
+#map h2{font-size:clamp(1.3rem,2.2vw,1.8rem)}
+#map .lead{font-size:.95rem;margin-top:8px}
+.mapwrap{max-width:900px;margin:14px auto 0}
+.mapwrap svg{max-height:340px;margin-inline:auto}
+
+/* Logos de nuestras marcas: más grandes y visibles */
+.brand{height:200px}
+.blogo{height:200px}
+.blogo.has-img img,
+.blogo.has-img img[alt="IdealFit"],
+.blogo.has-img img[alt="InstaNutra"],
+.blogo.has-img img[alt="SpecialFit Socks"]{max-height:180px;max-width:340px;width:auto;object-fit:contain}
+.blogo.has-img img{filter:brightness(0) invert(1) drop-shadow(0 6px 18px rgba(0,0,0,.55));opacity:1}
