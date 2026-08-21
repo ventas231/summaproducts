@@ -126,6 +126,11 @@ header.solid .lang button.on{background:var(--ink);color:#fff}
 .fit li b{flex:none;color:var(--ink);font-weight:700}
 .no li b{color:var(--silver)}
 .no li{color:var(--muted)}
+@media(min-width:1000px){
+  #fit .fit{grid-template-columns:1fr}
+  #fit .fit li{font-size:.9rem}
+  #fit .fit li span{white-space:nowrap}
+}
 /* faq */
 details{border-bottom:1px solid var(--line);padding:14px 0}
 summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:20px;font-size:1.02rem}
