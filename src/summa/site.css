@@ -437,3 +437,19 @@ footer a:hover{color:#fff}
 /* Aprovechar los laterales */
 .mkt .lead,.mkt h1,.mkt .hero-copy h1,.mkt .hero-copy .lead{max-width:none}
 .hero h1{max-width:none}
+
+/* Mapa más grande y sin fondo */
+.mapwrap{background:none!important;border:0!important;border-radius:0!important;margin-top:8px;max-width:none!important;overflow:visible}
+.mapwrap svg{max-height:none!important;width:100%;height:auto;filter:drop-shadow(0 18px 40px rgba(27,79,214,.35))}
+#map:before{background:none!important}
+.maplegend{border-top:0}
+.hero-grid{grid-template-columns:.85fr 1.25fr}
+@media(min-width:901px){.hero-map{transform:scale(1.06);transform-origin:center right}}
+
+/* Palabras resaltadas subrayadas */
+#who .hl.u,.hl.u{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}
+
+/* CTA flotante que sigue el scroll */
+.cta-float{position:fixed;right:22px;bottom:22px;z-index:80;display:inline-flex;align-items:center;justify-content:center;text-align:center;max-width:230px;line-height:1.2;box-shadow:0 18px 40px -14px rgba(27,79,214,.9)}
+@media(max-width:640px){.cta-float{left:16px;right:16px;max-width:none}}
+.btn.hbtn,.cta-float{text-align:center}
