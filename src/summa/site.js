@@ -51,7 +51,11 @@ const body='Hola,\n\nMe interesa que Summa Products venda mi producto en sus can
 document.querySelector('.ccard a[href^="mailto"]').href='mailto:admin@summaproducts.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
 
 const hd=document.getElementById('hd');
-addEventListener('scroll',()=>hd.classList.toggle('solid',scrollY>60));
+const hbtn=document.querySelector('.hbtn');
+addEventListener('scroll',()=>{
+  hd.classList.toggle('solid',scrollY>60);
+  if(hbtn) hbtn.classList.toggle('floating',scrollY>120);
+});
 
 const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.12});
 document.querySelectorAll('.rev').forEach(el=>io.observe(el));
