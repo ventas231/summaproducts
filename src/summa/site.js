@@ -52,10 +52,27 @@ document.querySelector('.ccard a[href^="mailto"]').href='mailto:admin@summaprodu
 
 const hd=document.getElementById('hd');
 const hbtn=document.querySelector('.hbtn');
-addEventListener('scroll',()=>{
-  hd.classList.toggle('solid',scrollY>60);
-  if(hbtn) hbtn.classList.toggle('floating',scrollY>120);
-});
+function updateHeader(){
+  const y=scrollY;
+  hd.classList.toggle('solid',y>60);
+  if(hbtn){
+    const floating=y>120;
+    hbtn.classList.toggle('floating',floating);
+    if(floating){
+      hbtn.style.top=(innerHeight-hbtn.offsetHeight-22)+'px';
+      hbtn.style.left=(innerWidth-hbtn.offsetWidth-22)+'px';
+      hbtn.style.right='auto';
+      hbtn.style.bottom='auto';
+    }else{
+      hbtn.style.top='';
+      hbtn.style.left='';
+      hbtn.style.right='';
+      hbtn.style.bottom='';
+    }
+  }
+}
+addEventListener('scroll',updateHeader);
+addEventListener('resize',updateHeader);
 
 const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.12});
 document.querySelectorAll('.rev').forEach(el=>io.observe(el));
