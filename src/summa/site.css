@@ -428,10 +428,7 @@ footer a:hover{color:#fff}
 #brands.warm .brand.pop img{filter:drop-shadow(0 0 18px rgba(11,16,32,.35))}
 
 /* Quiénes somos: título más ligero, pequeño y en dos renglones */
-/* Quiénes somos: encabezado centrado a todo lo ancho */
-.who-head{text-align:center;margin-bottom:34px}
-.who-title{font-family:Inter,system-ui,sans-serif;font-size:clamp(1.05rem,1.9vw,1.6rem);font-weight:300;line-height:1.5;color:#0B1020;max-width:none;margin-inline:auto}
-.two.one{grid-template-columns:1fr!important}
+#who h2{font-family:Inter,system-ui,sans-serif;font-size:clamp(1.05rem,1.9vw,1.6rem);font-weight:300;line-height:1.5;max-width:none}
 /* Aprovechar los laterales */
 .mkt .lead,.mkt h1,.mkt .hero-copy h1,.mkt .hero-copy .lead{max-width:none}
 .hero h1{max-width:none}
