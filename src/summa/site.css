@@ -340,7 +340,7 @@ footer a:hover{color:#fff}
 .mkt:before{background:radial-gradient(820px 420px at 78% -10%,rgba(77,163,255,.20),transparent 64%)}
 #map:before{background:radial-gradient(760px 420px at 20% 10%,rgba(27,79,214,.20),transparent 66%)}
 #contact:before{background:radial-gradient(700px 380px at 85% 100%,rgba(77,163,255,.14),transparent 66%)}
-#who,#brands,#services,#channels,#process,#faq{background:transparent}
+#brands,#services,#process{background:transparent}
 
 /* Hero compacto para que el mapa se vea de entrada */
 .mkt{padding:88px 0 12px}
@@ -400,7 +400,7 @@ footer a:hover{color:#fff}
 @media(max-width:700px){.ticker-logo img[src*="liverpool"]{max-height:74px;max-width:240px}}
 
 /* Secciones claras alternadas (blanco) */
-.warm{background:#FFFFFF;color:#0F1524}
+#who.warm,#channels.warm,#faq.warm,.warm{background:#FFFFFF;color:#0F1524}
 .warm h1,.warm h2,.warm h3,.warm summary{color:#0B1020 !important}
 .warm .eyebrow{color:#1B4FD6}
 .warm .lead,.warm p,.warm li,.warm .mlab,.warm details p,.warm .fit li span{color:#3A4457}
