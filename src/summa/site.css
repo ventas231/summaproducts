@@ -400,7 +400,7 @@ footer a:hover{color:#fff}
 @media(max-width:700px){.ticker-logo img[src*="liverpool"]{max-height:60px;max-width:220px}}
 
 /* Secciones claras alternadas (blanco) */
-#who.warm,#channels.warm,#faq.warm,.warm{background:#FFFFFF;color:#0F1524}
+#who.warm,#channels.warm,#faq.warm,#brands.warm,.warm{background:#FFFFFF;color:#0F1524}
 .warm h1,.warm h2,.warm h3,.warm summary{color:#0B1020 !important}
 .warm .eyebrow{color:#1B4FD6}
 .warm .lead,.warm p,.warm li,.warm .mlab,.warm details p,.warm .fit li span{color:#3A4457}
@@ -414,3 +414,13 @@ footer a:hover{color:#fff}
 .warm .btn-o{border-color:rgba(11,16,32,.25);color:#0B1020}
 .warm .btn-o:hover{border-color:#1B4FD6;background:rgba(77,163,255,.10)}
 .warm .card,.warm .ccard,.warm .form,.warm .ch{background:#F7F9FC;border:1px solid rgba(11,16,32,.10)}
+
+/* modelos + ajustes finales */
+.models .card{border-top:3px solid #4DA3FF}
+.mtag{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#4DA3FF;font-weight:700;margin-bottom:8px}
+.subhead{margin:34px 0 14px;font-size:1rem;letter-spacing:.02em;opacity:.85;text-align:center}
+.ops .card h3{font-size:1rem}
+.mkt .hero-copy h1{font-size:clamp(2.2rem,4.2vw,3.6rem);max-width:16ch;line-height:1.05}
+@media(max-width:860px){.mkt .hero-copy h1{font-size:clamp(1.9rem,7vw,2.6rem)}}
+#brands.warm .blogo.has-img img{filter:none;opacity:1}
+#brands.warm .brand.pop img{filter:drop-shadow(0 0 18px rgba(11,16,32,.35))}
