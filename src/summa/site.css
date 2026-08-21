@@ -340,7 +340,7 @@ footer a:hover{color:#fff}
 .mkt:before{background:radial-gradient(820px 420px at 78% -10%,rgba(77,163,255,.20),transparent 64%)}
 #map:before{background:radial-gradient(760px 420px at 20% 10%,rgba(27,79,214,.20),transparent 66%)}
 #contact:before{background:radial-gradient(700px 380px at 85% 100%,rgba(77,163,255,.14),transparent 66%)}
-#who,#brands,#services,#channels,#process,#faq{background:transparent}
+#brands,#services,#process{background:transparent}
 
 /* Hero compacto para que el mapa se vea de entrada */
 .mkt{padding:88px 0 12px}
@@ -394,3 +394,23 @@ footer a:hover{color:#fff}
 @keyframes chscroll{to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.ticker-wrap{animation:none}}
 @media(max-width:700px){.ticker-logo,.ticker-logo img{height:auto;max-height:60px}.ticker-track{gap:40px;padding:12px 20px}}
+
+/* Liverpool: mismo peso visual que el resto */
+.ticker-logo img[src*="liverpool"]{max-height:90px;max-width:340px}
+@media(max-width:700px){.ticker-logo img[src*="liverpool"]{max-height:60px;max-width:220px}}
+
+/* Secciones claras alternadas (blanco) */
+#who.warm,#channels.warm,#faq.warm,.warm{background:#FFFFFF;color:#0F1524}
+.warm h1,.warm h2,.warm h3,.warm summary{color:#0B1020 !important}
+.warm .eyebrow{color:#1B4FD6}
+.warm .lead,.warm p,.warm li,.warm .mlab,.warm details p,.warm .fit li span{color:#3A4457}
+.warm .hl{color:#0B1020;background:linear-gradient(transparent 62%,rgba(77,163,255,.35) 0)}
+.warm .shot{border-color:rgba(11,16,32,.12);background:#F2F4F8}
+.warm .faqs,.warm details{border-color:rgba(11,16,32,.12)}
+.warm summary:after{color:#1B4FD6 !important}
+.warm .channel-ticker{border-color:rgba(11,16,32,.10)}
+.warm .ticker-logo img{filter:none;opacity:1}
+.warm .pillar{border-top:2px solid #1B4FD6}
+.warm .btn-o{border-color:rgba(11,16,32,.25);color:#0B1020}
+.warm .btn-o:hover{border-color:#1B4FD6;background:rgba(77,163,255,.10)}
+.warm .card,.warm .ccard,.warm .form,.warm .ch{background:#F7F9FC;border:1px solid rgba(11,16,32,.10)}
