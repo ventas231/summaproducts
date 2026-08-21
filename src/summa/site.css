@@ -10,13 +10,13 @@ h1{font-size:clamp(2.1rem,5vw,3.9rem)}
 h2{font-size:clamp(1.7rem,3.4vw,2.7rem)}
 h3{font-size:1.05rem;font-weight:600;letter-spacing:-.01em}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
-@media(min-width:900px){.wrap{padding:0 48px}}
+.wrap{max-width:1720px;margin:0 auto;padding:0 24px}
+@media(min-width:900px){.wrap{padding:0 64px}}
 section{padding:64px 0}
 @media(min-width:900px){section{padding:96px 0}}
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:12px}
 .dark .eyebrow{color:var(--silver)}
-.lead{color:var(--muted);font-size:1.06rem;max-width:62ch;margin-top:14px}
+.lead{color:var(--muted);font-size:1.06rem;max-width:none;margin-top:14px}
 .dark{background:var(--ink);color:#fff}
 .dark .lead{color:var(--dim)}
 .warm{background:var(--paper-warm)}
@@ -130,7 +130,7 @@ summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-cont
 summary::-webkit-details-marker{display:none}
 summary:after{content:"+";color:var(--muted);font-weight:400;font-size:1.4rem;line-height:1}
 details[open] summary:after{content:"–"}
-details p{color:var(--muted);font-size:.95rem;margin-top:8px;max-width:75ch}
+details p{color:var(--muted);font-size:.95rem;margin-top:8px;max-width:none}
 .faqs{margin-top:26px;border-top:1px solid var(--line)}
 /* contact */
 .cgrid{display:grid;gap:28px;margin-top:34px}
@@ -426,4 +426,10 @@ footer a:hover{color:#fff}
 #brands.warm .brand.pop img{filter:drop-shadow(0 0 18px rgba(11,16,32,.35))}
 
 /* Quiénes somos: título más ligero, pequeño y en dos renglones */
-.who-title{font-family:Inter,system-ui,sans-serif;font-size:clamp(0.95rem,1.55vw,1.2rem);font-weight:300;line-height:1.55;color:#0B1020}
+/* Quiénes somos: encabezado centrado a todo lo ancho */
+.who-head{text-align:center;margin-bottom:34px}
+.who-title{font-family:Inter,system-ui,sans-serif;font-size:clamp(1.05rem,1.9vw,1.6rem);font-weight:300;line-height:1.5;color:#0B1020;max-width:none;margin-inline:auto}
+.two.one{grid-template-columns:1fr!important}
+/* Aprovechar los laterales */
+.mkt .lead,.mkt h1,.mkt .hero-copy h1,.mkt .hero-copy .lead{max-width:none}
+.hero h1{max-width:none}
