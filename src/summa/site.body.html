@@ -137,12 +137,11 @@
 
 <section class="warm" id="who">
   <div class="wrap">
-    <div class="two">
-      <div class="rev">
-        <p class="eyebrow" data-i18n="who_eyebrow">Quiénes somos</p>
-        <h2 class="who-title" data-i18n="who_title">Distribuimos, escalamos o construimos tu marca en Amazon. O te compramos directo.<br>Operadores reales con marcas propias rentables desde 2019.</h2>
-                
-      </div>
+    <div class="who-head rev">
+      <p class="eyebrow" data-i18n="who_eyebrow">Quiénes somos</p>
+      <h2 class="who-title" data-i18n="who_title">Distribuimos, escalamos o construimos tu marca en Amazon y los marketplace. O te la compramos directo: operadores reales, con marcas propias rentables desde 2019.</h2>
+    </div>
+    <div class="two one">
       <div class="rev">
         <div class="shot carousel" id="whoCarousel">
         <div class="cslides">
@@ -440,12 +439,25 @@
           </select>
         </div>
         <div class="field">
-          <label for="online" data-i18n="form_online">¿Ya se vende en línea en México?</label>
+          <label for="online" data-i18n="form_online">¿Ya vendes en algún marketplace?</label>
           <select id="online" name="online" required>
-            <option value="" data-i18n="form_online_placeholder">Sí</option>
+            <option value="si" data-i18n="form_online_placeholder">Sí</option>
             <option value="no" data-i18n="form_online_no">No</option>
           </select>
         </div>
+        <div class="field" id="mkField">
+          <label for="marketplaces" data-i18n="form_marketplaces">¿En cuáles? (Amazon, Mercado Libre, Walmart…)</label>
+          <input type="text" id="marketplaces" name="marketplaces" placeholder="Amazon, Mercado Libre…">
+        </div>
+        <div class="field">
+          <label for="productLink" data-i18n="form_link">Link del producto o catálogo</label>
+          <input type="url" id="productLink" name="productLink" placeholder="https://">
+        </div>
+        <div class="field">
+          <label for="photos" data-i18n="form_photos">Fotos del producto (opcional)</label>
+          <input type="file" id="photos" name="photos" accept="image/*" multiple>
+        </div>
+
         <div class="field">
           <label for="message" data-i18n="form_message">Mensaje</label>
           <textarea id="message" name="message"></textarea>
