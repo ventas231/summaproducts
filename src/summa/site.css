@@ -98,6 +98,8 @@ header.solid .lang button.on{background:var(--ink);color:#fff}
 .brand h3{font-size:1.1rem}
 .brand p{color:var(--muted);font-size:.9rem;margin-top:8px}
 /* cards */
+.grid2{display:grid;gap:16px;margin-top:34px}
+@media(min-width:700px){.grid2{grid-template-columns:repeat(2,1fr)}}
 .grid3{display:grid;gap:16px;margin-top:34px}
 @media(min-width:700px){.grid3{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1000px){.grid3{grid-template-columns:repeat(3,1fr)}}
