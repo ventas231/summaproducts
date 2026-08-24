@@ -473,10 +473,10 @@ footer a:hover{color:#fff}
 
 /* ===== Optimización móvil ===== */
 @media(max-width:900px){
-  /* El mapa se ve primero en celular */
+  /* En celular: primero el texto, luego el mapa */
   .hero-grid{display:flex;flex-direction:column;gap:22px}
-  .hero-map{order:-1}
-  .mkt .hero-copy{order:1}
+  .hero-map{order:1}
+  .mkt .hero-copy{order:0}
 }
 @media(max-width:700px){
   body{font-size:16px}
