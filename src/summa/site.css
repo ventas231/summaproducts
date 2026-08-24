@@ -299,8 +299,9 @@ footer a:hover{color:#fff}
 .mkt .hero-copy h1{margin-inline:0;max-width:20ch}
 .mkt .hero-copy .lead{margin-inline:0;text-align:left;text-align-last:left;max-width:56ch}
 .mkt .hero-copy .cta{justify-content:flex-start}
-.hero-map .eyebrow,.hero-map h2{text-align:left}
-.hero-map h2{font-size:clamp(1.05rem,1.6vw,1.35rem);margin-top:4px}
+.hero-map .eyebrow,.hero-map h2{text-align:center}
+.hero-map h2{font-size:clamp(1.05rem,1.6vw,1.35rem);margin-top:4px;margin-inline:auto;max-width:34ch}
+
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr;text-align:center}
   .hero-copy .kicker,.hero-copy h1,.hero-copy .lead,.hero-map .eyebrow,.hero-map h2{text-align:center}
   .mkt .hero-copy h1,.mkt .hero-copy .lead{margin-inline:auto}
