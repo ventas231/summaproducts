@@ -47,21 +47,24 @@
           <pattern id="mgrid" width="40" height="40" patternUnits="userSpaceOnUse">
             <path class="map-grid" d="M40 0H0V40"/>
           </pattern>
-          <path id="r1" d="M300,300 Q230,220 180,130"/>
-          <path id="r2" d="M300,300 Q240,250 195,215"/>
-          <path id="r3" d="M300,300 Q400,210 470,190"/>
-          <path id="r4" d="M300,300 Q390,300 435,285"/>
-          <path id="r5" d="M300,300 Q400,180 445,150"/>
-          <path id="r6" d="M300,300 Q300,270 288,258"/>
-          <path id="r7" d="M300,300 Q360,230 412,196"/>
-          <path id="r8" d="M300,300 Q220,250 208,178"/>
-          <path id="r9" d="M300,300 Q420,170 500,142"/>
+          <path id="r1" d="M330,290 Q240,230 166,150"/>
+          <path id="r2" d="M330,290 Q262,248 196,200"/>
+          <path id="r3" d="M330,290 Q430,238 508,178"/>
+          <path id="r4" d="M330,290 Q450,296 556,270"/>
+          <path id="r5" d="M330,290 Q410,220 470,168"/>
+          <path id="r6" d="M330,290 Q326,286 320,282"/>
+          <path id="r7" d="M330,290 Q392,236 440,180"/>
+          <path id="r8" d="M330,290 Q240,242 176,166"/>
+          <path id="r9" d="M330,290 Q424,214 492,158"/>
 
         </defs>
         <rect width="800" height="420" fill="url(#mgrid)"/>
-        <path class="land" d="M100,58 L300,44 L520,50 L660,66 L672,120 L600,150 L470,160 L330,158 L200,150 L120,132 Z"/>
-        <path class="land" d="M150,158 L330,162 L470,164 L620,166 L646,214 L560,240 L470,252 L380,244 L250,238 L162,214 Z"/>
-        <path class="land" d="M248,240 L380,248 L404,292 L344,336 L300,320 L266,278 Z"/>
+        <path class="land" d="M60,120 L78,96 L104,86 L128,92 L140,108 L128,124 L100,132 L96,146 L74,140 Z"/>
+        <path class="land" d="M150,152 L150,96 L200,72 L270,60 L340,54 L390,52 L400,80 L420,105 L455,110 L470,84 L462,56 L510,58 L560,70 L615,88 L648,104 L618,120 L586,130 L552,146 L470,152 L380,152 L260,152 Z"/>
+        <path class="land" d="M150,152 L260,152 L380,152 L470,152 L552,146 L562,168 L574,190 L580,210 L568,226 L558,246 L568,264 L560,290 L538,272 L518,254 L486,246 L440,246 L400,250 L360,252 L316,250 L286,240 L252,222 L214,204 L182,184 L160,168 Z"/>
+        <path class="land" d="M286,240 L316,250 L332,270 L346,286 L362,296 L380,300 L402,300 L412,310 L396,318 L372,314 L354,320 L344,336 L328,342 L314,330 L302,312 L284,296 L268,278 L256,258 L268,250 Z"/>
+        <path class="land" d="M236,222 L250,238 L262,262 L268,282 L258,286 L246,266 L234,244 L228,228 Z"/>
+        <path class="land" d="M402,300 L424,314 L440,330 L450,346 L438,350 L420,332 L400,318 Z"/>
         <use href="#r1" class="route"/>
         <use href="#r2" class="route"/>
         <use href="#r3" class="route"/>
@@ -91,16 +94,17 @@
         <g class="plane"><path d="M0,-5 L14,0 L0,5 L4,0 Z">
           <animateMotion dur="6.4s" begin="3s" repeatCount="indefinite" rotate="auto"><mpath href="#r9"/></animateMotion></path></g>
 
-        <g class="hub" data-hub="Puebla, México — bodega y operación"><circle class="hubpulse" cx="300" cy="300" r="4"/><circle class="hubdot" cx="300" cy="300" r="5"/><text x="310" y="312">Puebla · MX</text></g>
-        <g class="hub" data-hub="Vancouver, Canadá — Amazon.ca"><circle class="hubpulse" cx="180" cy="130" r="4"/><circle class="hubdot" cx="180" cy="130" r="4"/><text x="190" y="127">Vancouver · CA</text></g>
-        <g class="hub" data-hub="Toronto, Canadá — Amazon.ca"><circle class="hubpulse" cx="445" cy="150" r="4"/><circle class="hubdot" cx="445" cy="150" r="4"/><text x="455" y="147">Toronto · CA</text></g>
-        <g class="hub" data-hub="Los Ángeles, EE. UU. — Amazon.com"><circle class="hubpulse" cx="195" cy="215" r="4"/><circle class="hubdot" cx="195" cy="215" r="4"/><text x="150" y="234">Los Ángeles · US</text></g>
-        <g class="hub" data-hub="Nueva York, EE. UU. — Amazon.com y Walmart"><circle class="hubpulse" cx="470" cy="190" r="4"/><circle class="hubdot" cx="470" cy="190" r="4"/><text x="480" y="187">Nueva York · US</text></g>
-        <g class="hub" data-hub="Miami, EE. UU. — Amazon.com"><circle class="hubpulse" cx="435" cy="285" r="4"/><circle class="hubdot" cx="435" cy="285" r="4"/><text x="445" y="290">Miami · US</text></g>
-        <g class="hub" data-hub="Ciudad de México, México — Amazon.com.mx y Mercado Libre"><circle class="hubpulse" cx="288" cy="258" r="4"/><circle class="hubdot" cx="288" cy="258" r="4"/><text x="240" y="250">CDMX · MX</text></g>
-        <g class="hub" data-hub="Chicago, EE. UU. — Amazon.com"><circle class="hubpulse" cx="412" cy="196" r="4"/><circle class="hubdot" cx="412" cy="196" r="4"/><text x="366" y="190">Chicago · US</text></g>
-        <g class="hub" data-hub="Seattle, EE. UU. — Amazon.com"><circle class="hubpulse" cx="208" cy="178" r="4"/><circle class="hubdot" cx="208" cy="178" r="4"/><text x="218" y="175">Seattle · US</text></g>
-        <g class="hub" data-hub="Montreal, Canadá — Amazon.ca"><circle class="hubpulse" cx="500" cy="142" r="4"/><circle class="hubdot" cx="500" cy="142" r="4"/><text x="510" y="139">Montreal · CA</text></g>
+        <g class="hub" data-hub="Puebla, México — bodega y operación"><circle class="hubpulse" cx="330" cy="290" r="4"/><circle class="hubdot" cx="330" cy="290" r="5"/><text x="340" y="302">Puebla · MX</text></g>
+        <g class="hub" data-hub="Vancouver, Canadá — Amazon.ca"><circle class="hubpulse" cx="166" cy="150" r="4"/><circle class="hubdot" cx="166" cy="150" r="4"/><text x="120" y="142">Vancouver · CA</text></g>
+        <g class="hub" data-hub="Toronto, Canadá — Amazon.ca"><circle class="hubpulse" cx="470" cy="168" r="4"/><circle class="hubdot" cx="470" cy="168" r="4"/><text x="462" y="182">Toronto · CA</text></g>
+        <g class="hub" data-hub="Los Ángeles, EE. UU. — Amazon.com"><circle class="hubpulse" cx="196" cy="200" r="4"/><circle class="hubdot" cx="196" cy="200" r="4"/><text x="146" y="216">Los Ángeles · US</text></g>
+        <g class="hub" data-hub="Nueva York, EE. UU. — Amazon.com y Walmart"><circle class="hubpulse" cx="508" cy="178" r="4"/><circle class="hubdot" cx="508" cy="178" r="4"/><text x="518" y="176">Nueva York · US</text></g>
+        <g class="hub" data-hub="Miami, EE. UU. — Amazon.com"><circle class="hubpulse" cx="556" cy="270" r="4"/><circle class="hubdot" cx="556" cy="270" r="4"/><text x="566" y="274">Miami · US</text></g>
+        <g class="hub" data-hub="Ciudad de México, México — Amazon.com.mx y Mercado Libre"><circle class="hubpulse" cx="320" cy="282" r="4"/><circle class="hubdot" cx="320" cy="282" r="4"/><text x="262" y="276">CDMX · MX</text></g>
+        <g class="hub" data-hub="Chicago, EE. UU. — Amazon.com"><circle class="hubpulse" cx="440" cy="180" r="4"/><circle class="hubdot" cx="440" cy="180" r="4"/><text x="396" y="172">Chicago · US</text></g>
+        <g class="hub" data-hub="Seattle, EE. UU. — Amazon.com"><circle class="hubpulse" cx="176" cy="166" r="4"/><circle class="hubdot" cx="176" cy="166" r="4"/><text x="186" y="176">Seattle · US</text></g>
+        <g class="hub" data-hub="Montreal, Canadá — Amazon.ca"><circle class="hubpulse" cx="492" cy="158" r="4"/><circle class="hubdot" cx="492" cy="158" r="4"/><text x="502" y="152">Montreal · CA</text></g>
+
       </svg>
       <div class="maplegend"><span id="mapInfo" data-i18n="map_hint">Pasa el cursor sobre un destino para ver el detalle.</span></div>
      </div>
