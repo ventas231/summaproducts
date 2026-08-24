@@ -321,7 +321,7 @@ footer a:hover{color:#fff}
 @media(prefers-reduced-motion:reduce){.mkt-track{animation:none}}
 
 /* ============ Mapa interactivo ============ */
-.mapwrap{position:relative;margin-top:28px;border:1px solid var(--pz-line);border-radius:16px;overflow:hidden;background:radial-gradient(700px 420px at 50% 0%,rgba(27,79,214,.22),rgba(5,7,13,.9))}
+.mapwrap{position:relative;margin-top:10px;border:1px solid var(--pz-line);border-radius:16px;overflow:hidden;background:radial-gradient(700px 420px at 50% 0%,rgba(27,79,214,.22),rgba(5,7,13,.9))}
 .mapwrap svg{display:block;width:100%;height:auto}
 .map-grid{stroke:rgba(140,175,235,.10);stroke-width:.6;fill:none}
 .land{fill:rgba(120,160,220,.16);stroke:rgba(150,190,245,.55);stroke-width:.7;stroke-linejoin:round}
@@ -525,5 +525,5 @@ footer a:hover{color:#fff}
 @media(max-width:700px){
   .mkt{padding-top:88px;padding-bottom:28px}
   .hero-map .eyebrow{margin-bottom:4px}
-  .mapwrap{margin-top:2px;width:112%;margin-left:-6%}
+  .mapwrap{margin-top:-6px;width:116%;margin-left:-8%}
 }
