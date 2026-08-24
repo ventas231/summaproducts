@@ -144,18 +144,47 @@ document.querySelectorAll('.brand').forEach(function(b){
   b.addEventListener('animationend',function(){b.classList.remove('pop');});
 });
 
-/* Mapa interactivo: detalle del destino */
+/* Mapa interactivo: detalle del destino + ruta resaltada */
 (function(){
   var info=document.getElementById('mapInfo');
   if(!info)return;
   var base=info.textContent;
-  document.querySelectorAll('#map .hub').forEach(function(h){
-    var show=function(){info.innerHTML='<b>'+h.dataset.hub+'</b>';};
-    var hide=function(){info.textContent=base;};
-    h.addEventListener('mouseenter',show);
-    h.addEventListener('focus',show);
-    h.addEventListener('mouseleave',hide);
-    h.addEventListener('blur',hide);
+  var wrap=document.querySelector('#map .mapwrap');
+  var hubs=[].slice.call(document.querySelectorAll('#map .hub'));
+  var pinned=null;
+  function clear(){
+    hubs.forEach(function(x){x.classList.remove('active');});
+    [].forEach.call(document.querySelectorAll('#map .route'),function(r){r.classList.remove('on');});
+    if(wrap)wrap.classList.remove('focusing');
+    info.textContent=base;
+  }
+  function focus(h){
+    hubs.forEach(function(x){x.classList.toggle('active',x===h);});
+    [].forEach.call(document.querySelectorAll('#map .route'),function(r){r.classList.remove('on');});
+    var ru=document.getElementById('u-'+h.dataset.route);
+    if(ru)ru.classList.add('on');
+    if(wrap)wrap.classList.add('focusing');
+    info.innerHTML='<b>'+h.dataset.hub+'</b>';
+  }
+  hubs.forEach(function(h){
     h.setAttribute('tabindex','0');
+    h.addEventListener('mouseenter',function(){if(!pinned)focus(h);});
+    h.addEventListener('focus',function(){if(!pinned)focus(h);});
+    h.addEventListener('mouseleave',function(){if(!pinned)clear();});
+    h.addEventListener('blur',function(){if(!pinned)clear();});
+    h.addEventListener('click',function(){
+      if(pinned===h){pinned=null;clear();}
+      else{pinned=h;focus(h);}
+    });
+    h.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();
+        if(pinned===h){pinned=null;clear();}else{pinned=h;focus(h);}}
+    });
   });
+  if(wrap){
+    wrap.addEventListener('click',function(e){
+      if(!e.target.closest('.hub')){pinned=null;clear();}
+    });
+  }
 })();
+
