@@ -470,3 +470,60 @@ footer a:hover{color:#fff}
 @keyframes floatBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
 @keyframes shineMove{0%{left:-60%;opacity:0}20%{opacity:1}80%{opacity:1}100%{left:120%;opacity:0}}
 .btn.hbtn{text-align:center}
+
+/* ===== Optimización móvil ===== */
+@media(max-width:900px){
+  /* El mapa se ve primero en celular */
+  .hero-grid{display:flex;flex-direction:column;gap:22px}
+  .hero-map{order:-1}
+  .mkt .hero-copy{order:1}
+}
+@media(max-width:700px){
+  body{font-size:16px}
+  .wrap{padding:0 18px}
+  section{padding:44px 0}
+  h2{font-size:clamp(1.45rem,6.2vw,2rem);line-height:1.2}
+  h3{font-size:1rem}
+  .lead{font-size:1rem;margin-top:12px}
+  .eyebrow{font-size:11px;letter-spacing:.14em;margin-bottom:8px}
+
+  /* Hero compacto y centrado */
+  .mkt{padding-top:96px}
+  .mkt .hero-copy h1{font-size:clamp(1.75rem,8vw,2.3rem);line-height:1.1}
+  .mkt .hero-copy .cta{flex-direction:column;align-items:stretch;gap:10px;margin-top:20px}
+  .mkt .hero-copy .cta .btn{width:100%;justify-content:center;padding:15px 20px;border-radius:9999px;font-size:1rem}
+  .hero-map h2{font-size:1.02rem}
+  .mapwrap svg{max-height:none}
+  .maplegend{font-size:.82rem;text-align:center;padding:8px 4px}
+
+  /* Métricas en dos columnas, más aire */
+  .mgrid{gap:18px 14px}
+  .mnum{font-size:clamp(1.5rem,7vw,2rem)}
+  .mlab{font-size:.78rem;line-height:1.4}
+
+  /* Tarjetas y bloques */
+  .card{padding:18px}
+  .grid2,.grid3,.grid9,.pillars,.steps{gap:14px}
+  .models .card p{font-size:.95rem}
+
+  /* Marcas */
+  .brands{gap:14px}
+  .blogo img{max-height:96px}
+
+  /* Texto justificado se lee mejor alineado a la izquierda en pantallas chicas */
+  #who p,.card p,.fit p{text-align:left;text-align-last:left;hyphens:auto}
+
+  /* Formulario cómodo al tacto */
+  input,select,textarea,button{font-size:16px}
+  .frow{gap:12px}
+  form .btn{width:100%;justify-content:center;padding:16px;border-radius:9999px}
+
+  /* Espacio para la cápsula flotante */
+  body{padding-bottom:84px}
+  footer{padding-bottom:24px}
+}
+@media(max-width:700px){
+  .mkt{padding-top:88px;padding-bottom:28px}
+  .hero-map .eyebrow{margin-bottom:4px}
+  .mapwrap{margin-top:2px;width:112%;margin-left:-6%}
+}
