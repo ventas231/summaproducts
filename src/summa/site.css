@@ -594,9 +594,9 @@ h1,h2,h3{color:var(--pz-blue)!important}
 .mkt .lead{color:var(--pz-mut)}
 .btn-p,.on-light .btn-p{color:var(--pz-black)!important}
 .btn-o{color:var(--pz-text)}
-header nav,header.solid nav,header:not(.solid) nav{color:var(--pz-mut)}
+header nav,header.solid nav,header:not(.solid) nav{color:var(--pz-blue)}
 nav a:hover,header:not(.solid) nav a:hover{color:var(--pz-cyan)}
-.lang button{color:var(--pz-mut)}
+.lang button{color:var(--pz-blue)}
 .lang button.on{color:var(--pz-black)!important}
 footer h4,footer .logo{color:var(--pz-blue)}
 summary{color:var(--pz-blue)!important}
