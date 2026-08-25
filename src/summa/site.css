@@ -534,12 +534,12 @@ footer a:hover{color:#fff}
   .mapwrap{margin-top:-6px;width:116%;margin-left:-8%}
 }
 
-/* ====== Ajustes: títulos sobrios en dorado + acomodo Quiénes somos ====== */
-:root{--pz-gold:#E3C08A;--pz-gold-soft:#F2DCB4}
-h1,h2{color:var(--pz-gold)}
-h3{color:var(--pz-gold-soft)}
-.mnum{color:var(--pz-gold)}
-.hl{color:var(--pz-gold-soft);background:linear-gradient(transparent 62%,rgba(227,192,138,.22) 0)}
+/* ====== Ajustes: títulos sobrios en azul/negro ====== */
+h1,h2{color:#fff}
+h1 .hl,h2 .hl,h3 .hl{color:var(--pz-blue)}
+h3{color:#DCE6F7}
+.mnum{color:var(--pz-blue)}
+.hl{color:var(--pz-blue);background:linear-gradient(transparent 62%,rgba(77,163,255,.18) 0)}
 
 /* hero centrado */
 .hero-copy{text-align:center}
