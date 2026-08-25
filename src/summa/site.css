@@ -566,3 +566,54 @@ h3{color:#DCE6F7}
 .warm .wtag{color:#1B4FD6}
 .warm .mnum{color:#1B4FD6}
 .warm .wline{border-left-color:rgba(27,79,214,.3)}
+
+/* ====== TEMA PURO NEGRO Y AZUL ====== */
+:root{
+  --pz-black:#000000;
+  --pz-text:#AACCFF;
+  --pz-mut:#7B9BC8;
+  --pz-cyan:#5CCEFF;
+  --line:rgba(77,163,255,.18);
+}
+body{background:var(--pz-black);color:var(--pz-text)}
+.warm,#who.warm,#channels.warm,#faq.warm,#brands.warm{background:#03050A!important;color:var(--pz-text)!important}
+.warm h1,.warm h2,.warm h3,.warm summary{color:var(--pz-blue)!important}
+.warm .lead,.warm p,.warm li,.warm .mlab,.warm details p,.warm .fit li span{color:var(--pz-mut)!important}
+.warm .hl{color:var(--pz-cyan)!important;background:linear-gradient(transparent 62%,rgba(77,163,255,.18) 0)}
+.warm .wtag{color:var(--pz-cyan)!important}
+.warm .mnum{color:var(--pz-blue)!important}
+.warm .wline{border-left-color:rgba(77,163,255,.35)}
+.warm .card,.warm .ccard,.warm .form,.warm .ch{background:linear-gradient(180deg,rgba(20,32,56,.75),rgba(9,14,26,.75));border:1px solid var(--line)}
+.warm .btn-o{border-color:var(--line);color:var(--pz-text)}
+.warm .channel-ticker{border-color:var(--line)}
+.warm .faqs,.warm details{border-color:var(--line)}
+
+h1,h2,h3{color:var(--pz-blue)!important}
+.mkt .kicker{color:var(--pz-cyan)!important}
+.mkt h1,.hero-copy h1{background:linear-gradient(90deg,var(--pz-blue),var(--pz-cyan));-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.mkt .lead{color:var(--pz-mut)}
+.btn-p,.on-light .btn-p{color:var(--pz-black)!important}
+.btn-o{color:var(--pz-text)}
+header nav,header.solid nav,header:not(.solid) nav{color:var(--pz-mut)}
+nav a:hover,header:not(.solid) nav a:hover{color:var(--pz-cyan)}
+.lang button{color:var(--pz-mut)}
+.lang button.on{color:var(--pz-black)!important}
+footer h4,footer .logo{color:var(--pz-blue)}
+summary{color:var(--pz-blue)!important}
+summary:after{color:var(--pz-cyan)!important}
+.mnum{color:var(--pz-blue)!important}
+.metrics .mnote,.mlab{color:var(--pz-mut)}
+
+/* Mapa en azul */
+.hub text{fill:var(--pz-mut)}
+.hub.sm text{fill:var(--pz-mut)}
+.hub:hover .hubdot,.hub.active .hubdot,.plane{fill:var(--pz-cyan)}
+.hub:hover .hubpulse{fill:rgba(92,206,255,.45)}
+.route.on{stroke:var(--pz-cyan);filter:drop-shadow(0 0 6px rgba(92,206,255,.9))}
+.maplegend b{color:var(--pz-blue)}
+
+/* Brillos en azul */
+.brand:after,.model-btn:before,.hbtn.floating:before{background:linear-gradient(105deg,transparent,rgba(77,163,255,.45),transparent)}
+.hbtn.floating{box-shadow:0 18px 40px -14px rgba(27,79,214,.9),0 0 0 1px rgba(77,163,255,.2) inset,0 0 34px rgba(77,163,255,.45)}
+.brand.pop img{filter:brightness(0) invert(1) drop-shadow(0 0 18px rgba(77,163,255,.7))}
+
