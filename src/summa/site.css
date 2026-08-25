@@ -567,11 +567,19 @@ h3{color:#DCE6F7}
 .warm .wtag{color:#1B4FD6}
 .warm .mnum{color:#1B4FD6}
 .warm .wline{border-left-color:rgba(27,79,214,.3)}
-/* Quiénes somos: todo negro, solo negritas para resaltar */
+/* Quiénes somos: restaurado exactamente al acomodo de referencia */
 #who.warm h2{color:#0B1020 !important}
 #who.warm .lead.full,
-#who.warm p.lead{color:#0B1020;font-weight:700}
+#who.warm p.lead{color:#3A4457;font-weight:400}
+#who.warm .wline{padding-left:0;border-left:0;margin-bottom:14px}
+#who.warm .wtag{display:inline;font-size:inherit;letter-spacing:0;text-transform:none;margin:0}
 #who.warm .wtag,
-#who.warm .hl{color:#0B1020;font-weight:800;background:none}
+#who.warm .hl{color:#0B1020;font-weight:800;background:linear-gradient(transparent 72%,rgba(77,163,255,.28) 0);text-decoration:underline;text-decoration-color:#0B1020;text-underline-offset:2px;text-decoration-thickness:1px}
+
+/* En las demás secciones, títulos y negritas vuelven al azul intenso */
+.dark h3,
+.dark .hl,
+.models h3,
+.ops h3{color:#4DA3FF !important}
 @media(max-width:700px){#who.warm .lead.full,#who.warm p.lead{font-size:1rem}}
 
