@@ -534,12 +534,12 @@ footer a:hover{color:#fff}
   .mapwrap{margin-top:-6px;width:116%;margin-left:-8%}
 }
 
-/* ====== Ajustes: títulos sobrios en dorado + acomodo Quiénes somos ====== */
-:root{--pz-gold:#E3C08A;--pz-gold-soft:#F2DCB4}
-h1,h2{color:var(--pz-gold)}
-h3{color:var(--pz-gold-soft)}
-.mnum{color:var(--pz-gold)}
-.hl{color:var(--pz-gold-soft);background:linear-gradient(transparent 62%,rgba(227,192,138,.22) 0)}
+/* ====== Ajustes: títulos sobrios en azul/negro ====== */
+h1,h2{color:#fff}
+h1 .hl,h2 .hl,h3 .hl{color:var(--pz-blue)}
+h3{color:#DCE6F7}
+.mnum{color:var(--pz-blue)}
+.hl{color:var(--pz-blue);background:linear-gradient(transparent 62%,rgba(77,163,255,.18) 0)}
 
 /* hero centrado */
 .hero-copy{text-align:center}
@@ -556,11 +556,13 @@ h3{color:var(--pz-gold-soft)}
 .hero-map h2{font-size:clamp(1.5rem,2.6vw,2.2rem);max-width:22ch}
 
 /* Quiénes somos: bloques con etiqueta en mayúsculas */
-.wline{position:relative;padding-left:16px;border-left:2px solid rgba(227,192,138,.35);margin-bottom:14px}
-.wtag{display:block;font-family:Inter,system-ui,sans-serif;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--pz-gold);margin-bottom:4px;background:none;padding:0}
+.wline{position:relative;padding-left:16px;border-left:2px solid rgba(77,163,255,.35);margin-bottom:14px}
+.wtag{display:block;font-family:Inter,system-ui,sans-serif;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--pz-blue);margin-bottom:4px;background:none;padding:0}
 @media(max-width:900px){.wline{padding-left:12px}.wtag{font-size:.72rem;letter-spacing:.12em}}
-/* secciones claras: títulos en bronce sobrio */
-.warm h1,.warm h2,.warm summary{color:#8A6A2F !important}
-.warm h3{color:#6E5426 !important}
-.warm .wtag{color:#8A6A2F}
-.warm .wline{border-left-color:rgba(138,106,47,.35)}
+/* secciones claras: títulos en negro con acentos azules */
+.warm h1,.warm h2,.warm summary{color:#0B1220 !important}
+.warm h3{color:#0B1220 !important}
+.warm .hl{color:#1B4FD6;background:linear-gradient(transparent 62%,rgba(27,79,214,.14) 0)}
+.warm .wtag{color:#1B4FD6}
+.warm .mnum{color:#1B4FD6}
+.warm .wline{border-left-color:rgba(27,79,214,.3)}
