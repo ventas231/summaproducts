@@ -560,7 +560,7 @@ h3{color:#DCE6F7}
 .wtag{display:block;font-family:Inter,system-ui,sans-serif;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--pz-blue);margin-bottom:4px;background:none;padding:0}
 @media(max-width:900px){.wline{padding-left:12px}.wtag{font-size:.72rem;letter-spacing:.12em}}
 /* secciones claras: títulos azules y texto negro */
-.warm h1,.warm h2{color:#1B4FD6 !important}
+.warm h1,.warm h2{color:#0B1020 !important}
 .warm summary{color:#0B1220 !important}
 .warm h3{color:#0B1220 !important}
 .warm .hl{color:#1B4FD6;background:linear-gradient(transparent 62%,rgba(27,79,214,.14) 0)}
