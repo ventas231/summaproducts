@@ -583,3 +583,12 @@ h3{color:#DCE6F7}
 .ops h3{color:#4DA3FF !important}
 @media(max-width:700px){#who.warm .lead.full,#who.warm p.lead{font-size:1rem}}
 
+/* Textos solicitados en blanco */
+.mkt .kicker,
+#map .eyebrow,
+#services .eyebrow,
+#process .eyebrow,
+#fit .eyebrow,
+#fit h3[data-i18n="fit_yes_title"]{color:#fff !important}
+
+
