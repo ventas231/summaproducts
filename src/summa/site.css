@@ -592,3 +592,11 @@ h3{color:#DCE6F7}
 #fit h3[data-i18n="fit_yes_title"]{color:#fff !important}
 
 
+
+/* Carrusel: fotos de equipo con nombre */
+.carousel .cslide.person{object-fit:cover;object-position:center 18%}
+.carousel .ccap{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:26px 18px 16px;
+  font-weight:800;font-size:16px;letter-spacing:.02em;color:#fff;text-align:center;
+  background:linear-gradient(to top,rgba(5,10,22,.85),rgba(5,10,22,0));
+  opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease;pointer-events:none}
+.carousel .ccap.on{opacity:1;transform:translateY(0)}
